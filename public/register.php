@@ -1,6 +1,6 @@
     <?php
     require_once '../config/Database.php';
-    require_once '../classes/Auth.php';
+    require_once 'Auth/Auth.php';
 
     $db = new Database();
     $conn = $db->getConnection();

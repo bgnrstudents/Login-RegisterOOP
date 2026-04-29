@@ -28,6 +28,7 @@ class Auth
             if ($user && password_verify($password, $user['password'])) {
                 session_regenerate_id(true);
                 $_SESSION['user'] = $user;
+                $_SESSION['login'] = true;
                 return true;
             }
         }

@@ -1,11 +1,8 @@
 <?php
-require_once '../classes/Auth.php';
+require_once 'Auth/Auth.php';
 require_once '../classes/session.php';
 
 $session = new Session();
-
-// Kalau udah login, baru tampilin halaman admin
-// $user = $_SESSION['user'];
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -39,9 +36,9 @@ $session = new Session();
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="backend/jurusan/index.php" class="nav-link">
                     <i class="bi bi-people"></i>
-                    <span>Users</span>
+                    <span>Jurusan</span>
                 </a>
             </li>
             <li class="nav-item">
